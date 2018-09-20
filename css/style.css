@@ -1,0 +1,107 @@
+@keyframes example {
+    from {
+        background-color: lightskyblue;
+        z-index: -2;
+    }
+
+    to {
+        background-color: lightcoral;
+        z-index: -2;
+    }
+
+
+}
+
+@keyframes fade-away {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes speech {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+    animation-name: example;
+    animation-duration: 8s;
+    background-color: lightcoral;
+}
+
+.ghost {
+    animation-name: fade-away;
+    animation-duration: 10s;
+
+}
+
+.message {
+    float: ;
+    animation-name: speech;
+    animation-duration: 2s;
+
+
+
+}
+
+.cartoon {
+    border-radius: 50%;
+    border: 12px solid lightseagreen;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: lightsalmon;
+    border-top: 3px solid darkolivegreen;
+    border-bottom: 3px solid darkolivegreen;
+
+    z-index: 99;
+}
+
+nav .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+nav {
+    top: 0;
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+}
