@@ -29,7 +29,7 @@ html, css, github page.
 ### Design process
 search online for some ideas of developers portfolios, and then draw webdesign maps on paper.
 ### Wireframes
-![wireframes](docs/wireframes/wire1.pgn)
+![wireframes](docs/wireframes/wire1.png)
 ![wireframes](docs/wireframes/wire2.png)
 ![wireframes](docs/wireframes/wire3.png)
 ![wireframes](docs/wireframes/wire4.png)
