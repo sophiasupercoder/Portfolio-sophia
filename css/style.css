@@ -101,6 +101,7 @@ nav {
     position: fixed;
 }
 
+
 #about {
     grid-row: 2;
     display: flex;
@@ -127,8 +128,29 @@ nav {
 }
 
 .skill {
-    width: 80%;
+    width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #portfolio {
     grid-row: 3;
