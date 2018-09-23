@@ -61,4 +61,8 @@ The domain name is the address pointing to the website. Web server is a computer
 
 
 3.  Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words)
+Online education offers institutions a way to take advantage of these opportunities, either for large scale distance learning courses or as an element of existing face-to-face courses. broadband technology has made it possible for people to be always connected to the internet. With fast streaming, its now possible to have fully interactive educational resources available to access in an instant.
+
+
+
 
