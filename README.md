@@ -4,22 +4,6 @@ file:///Users/xiaoxiaozhu/Desktop/portfolio/src/index.html
 ## Link to GitHub repo
 https://github.com/sophiasupercoder/portfolio-sophia
 ## Description
-1. Purpose
-This website is to lure my future employer and demonstrate the skills i have acquaired.
-2. Functionality / features
-There are four pages for my portfolio website, which are Home, About me, Projects and Contact me. Home page is just a splash page of my portfolio, About me page is a basic introduction of my skills and my background. Projects page is a showcase of my previous projects for different skills. Contact me page is to let people leave their message and email address to get in touch.There is a navigation bar at the top of Home page to click, so it will take users to the target individual pages. Also at the end of the Contact me page, there are links to my social media pages like facebook, twitter, linked in and github.
-
-3. Sitemap
-Home     splash page
-About me    skill level
-Project     portfolio content(previous projects)
-Contact me    contact form and links to social media pages
-
-4. Screenshots
-
-
-5. Tech stack html, css, deployment platform, etc)
-
 ### Purpose
 This website is to lure my future employer and demonstrate the skills i have acquaired.
 ### Functionality / features
@@ -42,15 +26,18 @@ start-up companies who need tech support
 ### Tech stack
 html, css, github page.
 ## Design documentation
-
 ### Design process
+search online for some ideas of developers portfolios, and then draw webdesign maps on paper.
 ### Wireframes
+![wireframes](docs/wireframes/wire1.pgn)
+![wireframes](docs/wireframes/wire2.png)
+![wireframes](docs/wireframes/wire3.png)
+![wireframes](docs/wireframes/wire4.png)
 ### Usability considerations
-
+clean and easy to navigate design
 ## Details of planning process
-
 ### Project plan & timeline
-
+started at the 25/sep/2018, it took me 6 days in total to finish. It was planned to finish two days ago, but everthing takes longer than expected like always.
 ### Screenshots of Trello board(s)
 ![trello board screen shot](docs/trello.png)
 ## Short Answer Q&A - Include short answers to the following questions,
