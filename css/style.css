@@ -5,11 +5,9 @@
     }
 
     to {
-        background-color: lightcoral;
+        background-color: lightyellow;
         z-index: -2;
     }
-
-
 }
 
 @keyframes fade-away {
@@ -21,8 +19,6 @@
     to {
         opacity: 1;
     }
-
-
 }
 
 @keyframes speech {
@@ -34,18 +30,22 @@
     to {
         opacity: 1;
     }
-
-
 }
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 800px 1fr 1fr 0.6fr;
     width: 100%;
+}
 
+@media only screen and (max-width: 800px) {
+    .container {
+        grid-template-rows: 400px 1fr 1fr 0.6fr;
+    }
 }
 
 .splash {
+    grid-row: 1;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -54,25 +54,23 @@
     font-size: 1.5rem;
     animation-name: example;
     animation-duration: 8s;
-    background-color: lightcoral;
+    background-color: lightyellow;
 }
+
 
 .ghost {
     animation-name: fade-away;
     animation-duration: 10s;
+    padding-top: 90px;
 
 }
 
-.message {
-    float: ;
+.message1 {
     animation-name: speech;
     animation-duration: 2s;
-
-
-
 }
 
-.cartoon {
+.head {
     border-radius: 50%;
     border: 12px solid lightseagreen;
 }
@@ -83,20 +81,17 @@ nav {
     position: absolute;
     height: 50px;
     width: 100%;
-    background: lightsalmon;
-    border-top: 3px solid darkolivegreen;
-    border-bottom: 3px solid darkolivegreen;
-
+    background: white;
+    border-bottom: 3px solid lightseagreen;
     z-index: 99;
 }
 
 nav .link {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
     text-align: center;
-
 }
 
 nav {
@@ -104,4 +99,290 @@ nav {
     bottom: inherit;
     left: 0;
     position: fixed;
+}
+
+#about {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    padding-top: 10rem;
+}
+
+#about div:first-child {
+    width: 30%;
+    margin: 30px;
+    align-items: center;
+}
+
+#about div:nth-child(2) {
+    width: 60%;
+    margin: 3px;
+    align-items: center;
+}
+
+.head {
+    width: 80%;
+}
+
+.skill {
+    width: 80%;
+}
+
+#portfolio {
+    grid-row: 3;
+    padding-top: 5rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    font-family: 'Merienda', cursive;
+}
+
+#contact {
+    grid-row: 4;
+    padding-top: 5rem;
+    justify-self: center;
+    position: relative;
+    width: 100%;
+}
+
+.box1 {
+    grid-column: 4 / span 2;
+    text-align: center;
+}
+
+.box2 {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    text-align: center;
+
+}
+
+.box3 {
+    grid-row: 2;
+    grid-column: 4/ span 2;
+    text-align: center;
+
+}
+
+.box4 {
+    grid-row: 2;
+    grid-column: 6/ span 2;
+    text-align: center;
+
+}
+
+.box5 {
+    grid-row: 3 / 9;
+    grid-column: 2/ span 6;
+    text-align: center;
+
+}
+
+.links footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.wrapper {
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 680px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+
+/* content */
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+}
+
+
+/* form */
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+}
+
+.form input[type="text"],
+.form textarea {
+    border: 2px solid #fff;
+    padding: 15px 5px;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #4ca1af;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+        0 0 8px rgba(76, 161, 175, 0.5);
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* top-contact */
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+
+/* middle-form */
+.middle-form {
+    clear: both;
+}
+
+/* bottom-form */
+.bottom-form textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #4ca1af;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: "Kavivanar", cursive;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Kavivanar", cursive;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: "Kavivanar", cursive;
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        margin: 25px auto 0;
+    }
+
+    .top-form .inner-form {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .top-form,
+    .middle-form,
+    .bottom-form {
+        margin: 5px 0;
+    }
+
+    .form {
+        margin-top: 10px;
+    }
+
+    .form input[type="text"],
+    .form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* icon section */
+
+
+.icon {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    background: #4ca1af;
+    padding: 5px;
+    margin-top: 80px;
+}
+
+ul {
+    list-style: none;
+    width: 550px;
+    height: 80px;
+}
+
+ul li {
+    float: left;
+    width: 75px;
+    height: 70px;
+    border: 3px solid #fff;
+    margin-right: 36px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.5s linear;
+}
+
+ul li:hover {
+    background: #fff;
+    box-shadow: 0 0 30px 3px #fff;
+}
+
+ul li:hover .fa {
+    color: #f06060;
+}
+
+@media screen and (max-width: 640px) {
+    .icon ul {
+        width: 100px;
+    }
+
+    .wrapper ul li {
+        margin-top: 20px;
+    }
 }

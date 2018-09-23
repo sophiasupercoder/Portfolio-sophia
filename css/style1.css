@@ -1,0 +1,186 @@
+@keyframes example {
+    from {
+        background-color: lightskyblue;
+        z-index: -2;
+    }
+
+    to {
+        background-color: lightyellow;
+        z-index: -2;
+    }
+}
+
+@keyframes fade-away {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes speech {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.splash {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+    animation-name: example;
+    animation-duration: 8s;
+    background-color: lightyellow;
+}
+
+.ghost {
+    animation-name: fade-away;
+    animation-duration: 10s;
+
+}
+
+.message1 {
+    animation-name: speech;
+    animation-duration: 2s;
+}
+
+.head {
+    border-radius: 50%;
+    border: 12px solid lightseagreen;
+}
+
+nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: white;
+    border-bottom: 3px solid lightseagreen;
+    z-index: 99;
+}
+
+nav .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+nav {
+    top: 0;
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+}
+
+#about {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    padding-top: 10rem;
+}
+
+#about div:first-child {
+    width: 30%;
+    margin: 30px;
+    align-items: center;
+}
+
+#about div:nth-child(2) {
+    width: 60%;
+    margin: 3px;
+    align-items: center;
+}
+
+.head {
+    width: 80%;
+}
+
+.skill {
+    width: 80%;
+}
+
+#portfolio {
+    grid-row: 3;
+    padding-top: 5rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    font-family: 'Merienda', cursive;
+}
+
+#contact {
+    grid-row: 4;
+    padding-top: 5rem;
+    justify-self: center;
+}
+
+/* .portfolio-grid {
+    padding-top: 5rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 1fr); */
+.box1 {
+    grid-column: 4 / span 2;
+    text-align: center;
+    background-color: red;
+}
+
+.box2 {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    text-align: center;
+
+}
+
+.box3 {
+    grid-row: 2;
+    grid-column: 4/ span 2;
+    text-align: center;
+
+}
+
+.box4 {
+    grid-row: 2;
+    grid-column: 6/ span 2;
+    text-align: center;
+
+}
+
+.box5 {
+    grid-row: 3 / 9;
+    grid-column: 2/ span 6;
+    text-align: center;
+    background-color: rgb(14, 196, 105);
+}
+
+#ruby {
+    grid-row: 3 / 9;
+    grid-column: 2/ span 6;
+    text-align: center;
+    background-image: url("img/ruby.png");
+}
