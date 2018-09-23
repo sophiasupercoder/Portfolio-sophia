@@ -32,6 +32,9 @@ Contact me    contact form and links to social media pages
 
 ### Screenshots
 ![website screen shot](docs/website-screenshot/home.png)
+![website screen shot](docs/website-screenshot/about.png)
+![website screen shot](docs/website-screenshot/portfolio.png)
+![website screen shot](docs/website-screenshot/contact.png)
 
 ### Target audience
 start-up companies who need tech support
@@ -49,7 +52,7 @@ html, css, github page.
 ### Project plan & timeline
 
 ### Screenshots of Trello board(s)
-![trello board screen shot](https://trello.com/b/R18g87X5 )
+![trello board screen shot](docs/trello.png)
 ## Short Answer Q&A - Include short answers to the following questions,
 1. Describe key events in the development of the internet from the 1980s to today (max. 150 words)
 1981: The National Science Foundation (NSF) provided a grant to establish the Computer Science Network (CSNET) to provide networking services to university computer scientists.
